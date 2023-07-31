@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(./assets/background.jpg) no-repeat center center/cover;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+}
+
+li {
+  list-style-type: none;
+}
+
+.body {
+  padding-top: 70px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 15px;
+  max-width: 300px;
+}
+
+.images {
+  padding: 20px;
+  height: 200px;
+}
+
+.images .box {
+  background: url(/assets/album-cover.jpg) no-repeat center center/cover;
+  position: relative;
+  left: 16px;
+  border-radius: 12px;
+  background-color: #a25270;
+  width: 160px;
+  height: 160px;
+  z-index: 10;
+}
+
+.images .circle {
+  background: url(/assets/vinyl-removebg-preview.png) no-repeat center
+    center/cover;
+  position: relative;
+  left: 112px;
+  bottom: 160px;
+  margin: 8px 0;
+  border-radius: 100%;
+  width: 128px;
+  height: 144px;
+}
+
+.title-artist {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.title-artist h1 {
+  font-size: 18px;
+  line-height: 18px;
+  padding-bottom: 10px;
+}
+
+.title-artist p {
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.music-range {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+  justify-content: space-between;
+}
+
+.music-range div input {
+  display: flex;
+  min-width: 250px;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0 20px 0;
+}
+
+.controls .button {
+  cursor: pointer;
+}
+
+.controls .button:hover {
+  scale: 1.25;
+}
+
+#previous {
+  font-size: 50px;
+  color: #a25270;
+}
+
+#play-resume {
+  font-size: 75px;
+  color: #d6d6d6;
+  border-radius: 50%;
+  background: #8b345a;
+}
+
+#next {
+  font-size: 50px;
+  color: #a25270;
+}
+
+.explore {
+  padding: 0 30px;
+  color: #000;
+}
+
+.explore .title {
+  padding-bottom: 20px;
+}
+
+.tab-list {
+  display: flex;
+  cursor: pointer;
+}
+
+.tab-list .list-item {
+  padding-top: 20px;
+  padding-right: 70px;
+}

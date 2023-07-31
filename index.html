@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Integration</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="body">
+      <section class="container">
+        <div class="card">
+          <div class="images">
+            <div class="box"></div>
+            <div class="circle"></div>
+          </div>
+          <div class="title-artist">
+            <h1>All Too Well (Taylor's Version)</h1>
+            <p>Taylor Swift</p>
+          </div>
+          <div class="music-range">
+            <span class="current-time">0:00</span>
+            <span class="end-time">0:00</span>
+            <div>
+              <input type="range" value="0" />
+            </div>
+          </div>
+          <div class="controls">
+            <i id="previous" class="bx bx-skip-previous button"></i>
+            <i id="play-resume" class="bx bx-play button"></i>
+            <i id="next" class="bx bx-skip-next button"></i>
+          </div>
+        </div>
+        <div class="explore">
+          <h1 class="title">Explore</h1>
+          <div class="tab">
+            <ul class="tab-list">
+              <li class="list-item">Lyrics</li>
+              <li class="list-item">Other Albums</li>
+              <li class="list-item">Related Articles</li>
+            </ul>
+          </div>
+          <div class="content"></div>
+        </div>
+      </section>
+    </main>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+      integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
